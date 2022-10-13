@@ -80,7 +80,7 @@ restrict6 <-(Household_Pulse_data$TENURE== " housing rented ") & (Household_Puls
 data_new6 <- subset(Household_Pulse_data,restrict6) 
 t.test(restrict6)
 sd(restrict6)
-#summary(data_new2$BOOSTERRV) #SUMMARY:9%
+summary(data_new2$BOOSTERRV) #SUMMARY:9%
 prop.table(summary(data_new2$BOOSTERRV), margin = NULL)
 
 #I looked into housing rented and housing owned and free because i believe that if you owned your house and didnt have no bills and you dont work you will have less anxiety however base don the restrict i ran you can see that 13% of people are in that situation while people that are renting their homes and working are less stressed i guess you can say with 9%. its a small difference but it is suprsing taht people with prepaid homes are more stressed then people with jobs and a housing payment 
